@@ -9,37 +9,9 @@ module FreshPassword
 
   SYMBOLS = %w(! @ # $ % ^ & * - _ + =)
 
-  def self.generate_short
+  def self.generate(num)
     password = ''
-    for i in 0..15
-      if i % 2 == 0
-        password << ALPHABET.sample
-      elsif i % 3 == 0
-        password << NUMBERS.sample
-      else
-        password << SYMBOLS.sample
-      end
-    end
-    password
-  end
-
-  def self.generate
-    password = ''
-    for i in 0..30
-      if i % 2 == 0
-        password << ALPHABET.sample
-      elsif i % 3 == 0
-        password << NUMBERS.sample
-      else
-        password << SYMBOLS.sample
-      end
-    end
-    password
-  end
-
-  def self.generate_long
-    password = ''
-    for i in 0..45
+    for i in 0..num
       if i % 2 == 0
         password << ALPHABET.sample
       elsif i % 3 == 0
