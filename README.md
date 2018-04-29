@@ -22,7 +22,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+FreshPassword.generate_short
+```
+Output = "b%E3P#R*w1f@Q!R1"
+
+```ruby
+FreshPassword.generate
+```
+Output = "u=w2L%R_m2W-F$N2S_K*a9l-g@k3j+n"
+
+```ruby
+FreshPassword.generate_long
+```
+Output = "w$r3K!n$p7Y=W*x5k#d-r9P-t!E3H-Z&Y0u#w%n8r^M@c6"
 
 ## Development
 
