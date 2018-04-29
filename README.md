@@ -22,18 +22,20 @@ Or install it yourself as:
 
 ## Usage
 
+FreshPassword only has one method called generate. This method accepts an integer as an argument and outputs a password to the length of the argument.
+
 ```ruby
-FreshPassword.generate_short
+FreshPassword.generate 15
 ```
 Output = "b%E3P#R*w1f@Q!R1"
 
 ```ruby
-FreshPassword.generate
+FreshPassword.generate 30
 ```
 Output = "u=w2L%R_m2W-F$N2S_K*a9l-g@k3j+n"
 
 ```ruby
-FreshPassword.generate_long
+FreshPassword.generate 45
 ```
 Output = "w$r3K!n$p7Y=W*x5k#d-r9P-t!E3H-Z&Y0u#w%n8r^M@c6"
 
